@@ -13,6 +13,10 @@ body {
   vertical-align: middle;
 }
 
+.emoji {
+  font-family: 'Noto Color Emoji', sans-serif;
+}
+
 .small-caps {
   font-variant: small-caps;
   font-size: 5rem; /* Increased font size for the title */

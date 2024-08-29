@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>articulate-anything</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics. TODO: get the analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -56,44 +58,42 @@
             <h1 class="title is-1 publication-title">
               <span class="logo"></span>
               <span class="small-caps">articulate-anything</span><br>
-              <span style="font-size: 2rem;">Compositional Modeling of Articulated Objects via Vision-Language
+              <span style="font-size: 2rem;">Automatic Modeling of Articulated Objects via Vision-Language
                 Foundation Model</span>
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#">Long Le</a></span>
+                <a href="https://vlongle.github.io">Long Le</a></span>
               <a href="mailto:vlongle@seas.upenn.edu">
                 <span class="icon">
                   <i class="fa fa-envelope"></i>
                 </span>
               </a>,
-
               <span class="author-block">
-                <a href="#">Jason Xie</a>,</span>
+                <a href="https://www.jchunx.dev/">Jason Xie</a>,</span>
               <span class="author-block">
-                <a href="#">Yue Yang</a>,
+                <a href="https://yueyang1996.github.io/">Yue Yang</a>,
               </span>
               <span class="author-block">
-                <a href="#">Jason Ma</a>,
+                <a href="https://jasonma2016.github.io/">Jason Ma</a>,
               </span> <br>
               <span class="author-block">
-                <a href="#">Kyle Vedder</a>,
+                <a href="https://vedder.io/">Kyle Vedder</a>,
               </span>
               <span class="author-block">
-                <a href="#">Arjun Krishna</a>,
+                <a href="https://arjun-krishna.github.io/">Arjun Krishna</a>,
               </span>
               <span class="author-block">
-                <a href="#">Dinesh Jayaraman</a>,
+                <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a>,
               </span>
               <span class="author-block">
-                <a href="#">Eric Eaton</a>
+                <a href="https://www.seas.upenn.edu/~eeaton/">Eric Eaton</a>
               </span>
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">University of Pennsylvania</span>
             </div>
             <div class="is-size-5 publication-authors">
-
               <span class="author-block">
                 <span class="icon">
                   <i class="fa fa-envelope"></i>
@@ -113,7 +113,6 @@
                     <span>arXiv</span>
                   </a>
                 </span>
-
                 <span class="link-block">
                   <a target="_blank" href="assets/eureka_paper.pdf"
                     class="external-link button is-normal is-rounded is-dark">
@@ -129,10 +128,8 @@
                     </span>
                     <span>Code</span>
                   </a>
-
                 </span>
               </div>
-
             </div>
           </div>
         </div>
@@ -158,22 +155,24 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Interactive 3D simulated objects are crucial in AR/VR, animations, and
-              robotics, serving as the foundational elements that drive immersive experiences and advanced automation.
-              However, articulating these objects
-              requires extensive human effort and expertise, limiting their broader applications. To overcome this
-              challenge, we present <span class="dnerf">Articulate-Anything</span>, a
-              system that automates the articulation of diverse, complex objects from different input modalities,
-              including text, images, and videos. <span class="dnerf">Articulate-Anything</span> leverages
-              Vision-Language Models (VLMs) to generate Python
-              programs compilable into articulated Unified Robot Description Format
-              (URDF) files. Our system consists of a mesh retrieval mechanism and dual
-              actor-critic closed-loop systems. The agentic system is capable of automatically generating articulation,
-              inspecting predictions against ground-truths,
-              and self-correcting errors. Extensive qualitative and quantitative evaluations demonstrate <span
-                class="dnerf">Articulate-Anything</span>'s capability to articulate complex and even ambiguous objects,
-              substantially outperforming state-of-the-art methods in automatic articulation.
-
+              Interactive 3D simulated objects are crucial in AR/VR, animations, and robotics, serving as the
+              foundational elements that drive immersive experiences and advanced automation.
+              However, articulating these objects requires extensive human effort and expertise, limiting their broader
+              applications.
+              To overcome this challenge, we present <span class="dnerf">Articulate-Anything</span>, a system that
+              automates the articulation of diverse, complex objects from different input modalities, including text,
+              images, and videos.
+              <span class="dnerf">Articulate-Anything</span> leverages Vision-Language Models (VLMs) to generate Python
+              programs compilable into articulated Unified Robot Description Format (URDF) files. Our system consists of
+              a mesh retrieval mechanism and
+              dual actor-critic closed-loop systems. The agentic system is capable of automatically generating
+              articulation, inspecting simulated predictions against ground-truths, and self-correcting errors.
+              Qualitative evaluations demonstrate <span class="dnerf">Articulate-Anything</span>'s capability to
+              articulate complex and even ambiguous object affordances by leveraging rich grounded inputs. In extensive
+              quantitative experiments on the standard PartNet-Mobility dataset,
+              <span class="dnerf">Articulate-Anything</span> substantially outperforms prior work in automatic
+              articulation, increasing the success rate from 8.7-24.7% to 89.6%, setting a new bar for state-of-art
+              performance.
             </p>
           </div>
         </div>
@@ -188,7 +187,9 @@
           <div class="rows">
             <div class="rows is-centered ">
               <div class="row is-full-width">
-                <h2 class="title is-3"><span class="dvima">Articulate-Anything reconstructions</span></h2>
+                <h2 class="title is-3"><span class="dvima"><span class="emoji">🌳</span> In-the-wild
+                    reconstructions</span></h2>
+
                 <p style="font-size: 125%">
                   In this demo, we visualize the articulation results
                   for each in the wild videos.
@@ -201,50 +202,86 @@
             <div class="column is-half">
               <p style="font-size: 1.5em"><b>Real-world videos</b></p>
               <div class="col-md-4 col-sm-4 col-xs-4">
-                <img src="in-the-wild-dataset/videos/resize_aug_lab_toilet.gif" width="18%"
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_lab_toilet.gif" width="30%"
                   style="border-radius: 5px;" alt='<b>Toilet</b>, articulate-anything:
                         [sep]
                         assets/articulation/lab_toilet/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/videos/resize_aug_chair.gif" width="18%"
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_oven.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Oven</b>, articulate-anything:
+                        [sep]
+                        assets/articulation/oven/joint_pred.txt' onclick="populateDemo(this, 1);">
+
+
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_chair.gif" width="30%"
                   style="border-radius: 5px;" alt='<b>Chair</b>, articulate-anything:
                         [sep]
                         assets/articulation/chair/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/videos/resize_aug_simple_drawer.gif" width="18%"
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_simple_drawer.gif" width="30%"
                   style="border-radius: 5px;" alt='<b>Drawer</b>, articulate-anything:
                         [sep]
                         assets/articulation/simple_drawer/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/videos/resize_aug_suitcase.gif" width="18%"
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_suitcase.gif" width="30%"
                   style="border-radius: 5px;" alt='<b>Suitcase</b>, articulate-anything:
                         [sep]
                         assets/articulation/suitcase/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/videos/resize_aug_window.gif" width="18%"
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_window.gif" width="30%"
                   style="border-radius: 5px;" alt='<b>Window</b>, articulate-anything:
                         [sep]
                         assets/articulation/window/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <!-- <img src="in-the-wild-dataset/videos/resize_aug_fridge.gif" width="18%"
-                  style="border-radius: 5px;" alt='<b>FrankaCabinet</b>, articulate-anything:
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_laptop.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Laptop</b>, articulate-anything:
                         [sep]
-                        assets/reward_functions/franka_cabinet.txt' onclick="populateDemo(this, 1);">
+                        assets/articulation/laptop/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/images/suitcase.png" width="18%" style="border-radius: 5px;"
-                  alt='<b>Humanoid</b>, articulate-anything:
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_monitor.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Display</b>, articulate-anything:
                         [sep]
-                        assets/reward_functions/humanoid.txt' onclick="populateDemo(this, 1);">
+                        assets/articulation/monitor/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/images/suitcase.png" width="18%" style="border-radius: 5px;"
-                  alt='<b>Quadcopter</b>, articulate-anything:
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_microwave.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Microwave</b>, articulate-anything:
                         [sep]
-                        assets/reward_functions/quadcopter.txt' onclick="populateDemo(this, 1);">
+                        assets/articulation/microwave/joint_pred.txt' onclick="populateDemo(this, 1);">
 
-                <img src="in-the-wild-dataset/images/suitcase.png" width="18%" style="border-radius: 5px;"
-                  alt='<b>ShadowHand</b>, articulate-anything:
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_box.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Box</b>, articulate-anything:
+                              [sep]
+                              assets/articulation/box/joint_pred.txt' onclick="populateDemo(this, 1);">
+
+
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_dishwasher.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Dishwasher</b>, articulate-anything:
                         [sep]
-                        assets/reward_functions/shadow_hand.txt' onclick="populateDemo(this, 1);"> -->
+                        assets/articulation/dishwasher/joint_pred.txt' onclick="populateDemo(this, 1);">
+
+
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_fridge.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Fridge</b>, articulate-anything:
+                        [sep]
+                        assets/articulation/fridge/joint_pred.txt' onclick="populateDemo(this, 1);">
+
+
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_kitchen_pot.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Kitchen pot</b>, articulate-anything:
+                              [sep]
+                              assets/articulation/kitchen_pot/joint_pred.txt' onclick="populateDemo(this, 1);">
+
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_door.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Door</b>, articulate-anything:
+                                    [sep]
+                                    assets/articulation/door/joint_pred.txt' onclick="populateDemo(this, 1);">
+                <img src="datasets/in-the-wild-dataset/videos/resize_aug_washing_machine.gif" width="30%"
+                  style="border-radius: 5px;" alt='<b>Washing machine</b>, articulate-anything:
+                                                      assets/articulation/washing_machine/joint_pred.txt'
+                  onclick="populateDemo(this, 1);">
+
+
+
               </div>
 
               <br>
@@ -259,7 +296,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div id="imgtext-1" style="font-size: 1.5em">Select an image above:</div>
+            <div id="imgtext-1" style="font-size: 1.5em">Select a real-world video above:</div>
             <div>
               <pre
                 class="p-1"><code class="language-python" id="answer-1">Articulate-anything response shown within code block.</code></pre>
